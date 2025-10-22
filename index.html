@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Блог — YouTalk</title>
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="layout">
+
+<!-- Header -->
+<header class="header" role="banner" aria-label="Верхняя навигация">
+    <div class="header__layout">
+        <a class="header__logo-link" href="/" aria-label="На главную">
+            <img class="header__logo" src="images/logos/you_talk_logo.svg" alt="YouTalk"/>
+        </a>
+
+        <nav class="header__menu" aria-label="Главное меню">
+            <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="#">О нас</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Тарифы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Для бизнеса</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Психологам</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Сертификаты</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Материалы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <button class="button button--primary header__cta">Подобрать психолога</button>
+
+        <button class="header__burger" type="button" aria-label="Открыть меню">
+            <img src="images/logos/header__burger.svg" alt="" aria-hidden="true"/>
+        </button>
+    </div>
+</header>
+
+<div class="header__line" aria-hidden="true"></div>
+
+<!-- Main -->
+<main class="content" id="main-content">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current" aria-current="page">Блог</span></li>
+        </ul>
+    </nav>
+
+    <h1 class="content__title">Блог</h1>
+
+    <div class="tags" role="group" aria-label="Фильтры статей" aria-controls="cards-list">
+        <button class="tags__item" type="button" data-tag="Все">
+            <span class="tags__emoji" aria-hidden="true">😌</span>
+            <span>Все</span>
+        </button>
+
+        <button class="tags__item" type="button" data-tag="Самооценка и самопринятие">Самооценка и самопринятие</button>
+
+        <button class="tags__item" type="button" data-tag="Саморазвитие">
+            <img class="tags__icon" src="images/logos/unicorn.svg" alt="" aria-hidden="true">
+            <span>Саморазвитие</span>
+        </button>
+
+        <button class="tags__item" type="button" data-tag="Чувства и эмоции">Чувства и эмоции</button>
+        <button class="tags__item" type="button" data-tag="Тревожность">Тревожность</button>
+        <button class="tags__item" type="button" data-tag="Упражнения">Упражнения</button>
+        <button class="tags__item" type="button" data-tag="Психология питания">Психология питания</button>
+        <button class="tags__item" type="button" data-tag="Насилие">Насилие</button>
+        <button class="tags__item" type="button" data-tag="Личное здоровье">Личное здоровье</button>
+    </div>
+
+    <section class="cards" id="cards-list" aria-label="Список статей">
+
+        <article class="card" data-tags="Упражнения, Личное здоровье">
+            <div class="card__media">
+                <img class="card__img" src="images/png/runner.png"
+                     alt="Эмоциональное выгорание — стадии, симптомы и профилактика" loading="lazy" decoding="async">
+                <div class="card__tags">
+                    <button type="button" class="badge" data-tag="Упражнения">Упражнения</button>
+                    <button type="button" class="badge" data-tag="Личное здоровье">Личное здоровье</button>
+                </div>
+            </div>
+
+            <div class="card__body">
+                <h2 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и
+                    профилактики</h2>
+                <p class="card__author">Автор: Лиза Файнтух</p>
+                <p class="card__desc">Изначально термин «эмоциональное выгорание» относился к профессиональной
+                    сфере...</p>
+                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+            </div>
+        </article>
+
+        <article class="card" data-tags="Самооценка и самопринятие, Саморазвитие">
+            <img class="card__img" src="images/png/smiley_eggs.png"
+                 alt="Эмоциональное выгорание — стадии, симптомы и профилактика" loading="lazy" decoding="async"/>
+            <div class="card__tags">
+                <button type="button" class="badge" data-tag="Самооценка и самопринятие">Самооценка и самопринятие
+                </button>
+                <button type="button" class="badge" data-tag="Саморазвитие">
+                    <img class="badge__icon" src="images/logos/unicorn.svg" alt="" aria-hidden="true"> Саморазвитие
+                </button>
+            </div>
+            <div class="card__body">
+                <h2 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и
+                    профилактики</h2>
+                <p class="card__author">Автор: Лиза Файнтух</p>
+                <p class="card__desc">Изначально термин «эмоциональное выгорание» относился к профессиональной
+                    сфере...</p>
+                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+            </div>
+        </article>
+
+        <article class="card" data-tags="Личное здоровье, Упражнения">
+            <img class="card__img" src="images/png/swim_woman.png"
+                 alt="Эмоциональное выгорание — стадии, симптомы и профилактика" loading="lazy" decoding="async"/>
+            <div class="card__tags">
+                <button type="button" class="badge" data-tag="Личное здоровье">Личное здоровье</button>
+                <button type="button" class="badge" data-tag="Упражнения">Упражнения</button>
+            </div>
+            <div class="card__body">
+                <h2 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и
+                    профилактики</h2>
+                <p class="card__author">Автор: Лиза Файнтух</p>
+                <p class="card__desc">Изначально термин «эмоциональное выгорание» относился к профессиональной
+                    сфере...</p>
+                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+            </div>
+        </article>
+
+        <article class="card" data-tags="Тревожность, Чувства и эмоции">
+            <img class="card__img" src="images/png/working_woman.png"
+                 alt="Эмоциональное выгорание — стадии, симптомы и профилактика" loading="lazy" decoding="async"/>
+            <div class="card__tags">
+                <button type="button" class="badge" data-tag="Тревожность">😵‍Тревожность</button>
+                <button type="button" class="badge" data-tag="Чувства и эмоции">Чувства и эмоции</button>
+            </div>
+            <div class="card__body">
+                <h2 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и
+                    профилактики</h2>
+                <p class="card__author">Автор: Лиза Файнтух</p>
+                <p class="card__desc">Изначально термин «эмоциональное выгорание» относился к профессиональной
+                    сфере...</p>
+                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+            </div>
+        </article>
+
+        <article class="card" data-tags="Насилие, Чувства и эмоции">
+            <img class="card__img" src="images/png/x_men.png"
+                 alt="Эмоциональное выгорание — стадии, симптомы и профилактика" loading="lazy" decoding="async"/>
+            <div class="card__tags">
+                <button type="button" class="badge" data-tag="Насилие">Насилие</button>
+                <button type="button" class="badge" data-tag="Чувства и эмоции">Чувства и эмоции</button>
+            </div>
+            <div class="card__body">
+                <h2 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и
+                    профилактики</h2>
+                <p class="card__author">Автор: Лиза Файнтух</p>
+                <p class="card__desc">Изначально термин «эмоциональное выгорание» относился к профессиональной
+                    сфере...</p>
+                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+            </div>
+        </article>
+
+        <article class="card" data-tags="Тревожность, Панические атаки">
+            <img class="card__img" src="images/png/bored_woman.png"
+                 alt="Эмоциональное выгорание — стадии, симптомы и профилактика" loading="lazy" decoding="async"/>
+            <div class="card__tags">
+                <button type="button" class="badge" data-tag="Тревожность">😵‍Тревожность</button>
+                <button type="button" class="badge" data-tag="Панические атаки">Панические атаки</button>
+            </div>
+            <div class="card__body">
+                <h2 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и
+                    профилактики</h2>
+                <p class="card__author">Автор: Лиза Файнтух</p>
+                <p class="card__desc">Изначально термин «эмоциональное выгорание» относился к профессиональной
+                    сфере...</p>
+                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+            </div>
+        </article>
+    </section>
+    <span id="cards-count" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></span>
+
+    <p id="cards-empty"
+       class="cards-empty"
+       role="status"
+       aria-live="polite"
+       aria-atomic="true"
+       hidden>
+        По выбранным тегам ничего не найдено.
+    </p>
+    <div class="more">
+        <button class="button button--secondary">Ещё</button>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+        <div class="footer__top">
+            <nav class="footer-links" aria-label="Основные ссылки">
+                <div class="footer-links__col">
+                    <a class="footer-links__link" href="#">О нас</a>
+                    <a class="footer-links__link" href="#">Тарифы</a>
+                    <a class="footer-links__link" href="#">Для бизнеса</a>
+                    <a class="footer-links__link" href="#">Психологам</a>
+                    <a class="footer-links__link" href="#">FAQ</a>
+                </div>
+                <div class="footer-links__col">
+                    <a class="footer-links__link" href="#">Блог</a>
+                    <a class="footer-links__link" href="#">Вебинары</a>
+                    <a class="footer-links__link" href="#">Подкаст</a>
+                    <a class="footer-links__link" href="#">Сертификат</a>
+                    <a class="footer-links__link" href="#">Контакты</a>
+                </div>
+            </nav>
+
+            <div class="newsletter">
+                <p class="newsletter__title">Одно письмо в неделю со свежими<br>новостями и акциями</p>
+
+                <!-- input  -->
+                <form class="newsletter__form" action="#" method="post" novalidate>
+                    <div class="newsletter__group">
+                        <input class="newsletter__input" type="email" autocomplete="email" placeholder="Ваш e-mail"
+                               required
+                               aria-label="E-mail для рассылки">
+                        <button class="newsletter__submit" type="submit" aria-label="Подписаться">
+                            <img class="newsletter__icon" src="images/logos/email_button.svg" alt="" aria-hidden="true">
+                        </button>
+                    </div>
+                </form>
+
+                <p class="newsletter__consent">
+                    Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ №152-ФЗ
+                    «О персональных данных», а также с Политикой конфиденциальности
+                </p>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="member">
+                <div class="member__box" aria-hidden="true">
+                    <div class="member__box-left">
+                        <img src="images/logos/sk_logo.svg" alt="Skolkovo" class="member__sk-logo">
+                    </div>
+                    <div class="member__box-right">
+                        <img src="images/logos/atom)).svg" alt="Atom" class="member__atom-logo">
+                    </div>
+                </div>
+                <span class="member__label">Участник</span>
+            </div>
+
+            <div class="socials" aria-label="Социальные сети">
+                <a class="socials__link" href="#" aria-label="VK"><img src="images/logos/vk_custom_logo.svg" alt=""></a>
+                <a class="socials__link" href="#" aria-label="Telegram"><img src="images/logos/telegram_custom_logo.svg"
+                                                                             alt=""></a>
+                <a class="socials__link" href="#" aria-label="X / Twitter"><img
+                        src="images/logos/twitter_custom_logo.svg"
+                        alt=""></a>
+                <a class="socials__link" href="#" aria-label="Дзен"><img src="images/logos/yandex_dzen_dark.svg" alt=""></a>
+            </div>
+
+            <div class="footer__divider" aria-hidden="true"></div>
+
+            <div class="legal">
+                <p class="legal__copy">© Youtalk, 2018—2022</p>
+                <a class="legal__link" href="#">Юридические документы</a>
+                <a class="legal__link" href="#">Способы оплаты</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/tags-filter.js" defer></script>
+</body>
+</html>
